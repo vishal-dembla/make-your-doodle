@@ -125,7 +125,7 @@ function handleDownload() {
 // This is the main function that starts everything up
 async function init() {
     // 1. Load the data from our JSON file
-    response = await fetch('/make-your-doodle/quickdraw_data.json');
+    const response = await fetch('/make-your-doodle/quick_draw.json');
     doodleData = await response.json();
 
     // 2. Populate the dropdown menus
